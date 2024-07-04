@@ -10,6 +10,10 @@ BusyBuy is a simple e-commerce web application built with React.js, Firebase/Fir
 - **Notifications**: react-toastify
 - **Loading Spinner**: react-spinner
 
+## Live Website
+
+[BusyBuy](https://busybuywebsite.netlify.app/)
+
 ## Features
 
 1. **User Authentication**: 
