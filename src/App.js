@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
+import ErrorPage from "./Components/ErrorPage";
+import Home from "./Components/Home";
+import Navbar from "./Components/navbar";
+import Cart from "./Components/Cart";
+import SignIn from "./Components/Authentication/SignIn";
+import SignUp from "./Components/Authentication/SignUp";
+import Orders from "./Components/Orders";
+import "./Styles/common.css";
+import AuthProvider from "./Context/authContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ProductProvider from "./Context/productContext";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navbar />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/signin", element: <SignIn /> },
+      { path: "/signup", element: <SignUp /> },
+      { path: "/orders", element: <Orders /> },
+    ],
+  },
+]);
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthProvider className="container">
+        <ProductProvider>
+          <RouterProvider router={router} />
+        </ProductProvider>
+      </AuthProvider>
+      <ToastContainer />
+    </>
   );
 }
 

@@ -1,0 +1,358 @@
+/* ===Body==== */
+body {
+    /* background-color: #eae7ff; */
+    background-color: white;
+}
+
+
+/* -----Login Page------- */
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    margin-top: 10%;
+    caret-color: auto;
+    background-color: tra;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    width: 50%;
+    text-align: center;
+
+}
+
+.login-container h2 {
+    color: #000000;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    color: #110221;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.login-form button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.login-form button:hover {
+    background-color: #6a5acd;
+}
+
+#recruiter-register-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#googleSigninImg {
+    width: 20rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#googleSigninImg:hover {
+    transform: scale(1.04);
+}
+
+#cart-btn {
+    vertical-align: middle;
+}
+
+
+
+/* ======Navigation Bar============= */
+#home-logo {
+    width: 2.4rem;
+    margin-right: 9px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+#nav-home-text {
+    font-size: large;
+    vertical-align: middle;
+    margin-left: -5px;
+}
+
+.dropdown-menu {
+    background-color: #000000;
+    box-shadow: 0px 0px 5px 1px #000000be;
+    border-style: none;
+    color: white;
+    width: 200px;
+    padding: 20px;
+}
+
+#filter-range {
+    width: 100%;
+}
+
+
+/* ===========Home Page=========== */
+.product-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    row-gap: 10px;
+    column-gap: 5px;
+
+}
+
+.product-card {
+    border-color: #6a5acd;
+    border-style: solid;
+    border-radius: 0.3rem;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 450px;
+    position: relative;
+    cursor: default;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.product-image img {
+    width: 200px;
+    /* Set the desired width */
+    height: 200px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Crop the image to fit */
+}
+
+.product-body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    top: 55%;
+    padding: 5%;
+    position: absolute;
+    /* column-gap: 200px;
+    row-gap: 10px; */
+    /* flex-wrap: wrap; */
+}
+
+.product-body h5 {
+    width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-body h5:hover {
+    width: 230px;
+    overflow: auto;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.product-atc {
+    position: absolute;
+    top: 90%;
+    border-radius: 0.3rem;
+    width: 40%;
+    background-color: #6a5acd;
+    color: white;
+    border-width: 1px;
+    border-color: #6a5acd;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 7px 1px #695acd9c;
+
+}
+
+.product-atc:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.397);
+    border-color: black;
+}
+
+/* ================= Cart Page =================== */
+
+#cart-page-heading {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-count {
+    text-align: center;
+}
+
+.cart-quantity-btn {
+    border: 1px solid #6a5acd;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.cart-quantity-btn:hover{
+    background-color: #6a5acd;
+    color: white;
+}
+
+.cart-remove-btn {
+    background-color: #ff0000;
+    width: 100px;
+    color: white;
+    border-width: 1px;
+    border-color: #ff0000;
+    border-radius: 0.3rem;
+    margin-inline: 10px;
+    transition: all 0.3s ease;
+}
+
+.cart-remove-btn:hover{
+    background-color: #fff2f2;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border-color: #ff0000;
+    border-radius: 0.3rem;
+}
+
+.cart-page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-cards-container {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    row-gap: 10px;
+    column-gap: 50px;
+
+}
+
+#cart-body{
+    overflow: hidden;
+}
+
+#purchase-container{
+    position: fixed;
+    bottom: 40%;
+    right: 3%;
+    text-align: center;
+    /* font-weight: 600; */
+    font-size: large;
+}
+
+#purchase-button{
+    width: 15vw;
+    height: 40px;
+    background-color: rgb(0, 189, 0);
+    border-radius: 0.3rem;
+    border-color: transparent;
+    
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.27);
+
+    transition: all 0.3s ease;
+}
+
+#purchase-button:hover{
+    background-color: rgb(0, 255, 0);
+}
+
+
+/* ====================Orders Page===================== */
+
+.orders-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .item-description {
+    margin-bottom: 5px;
+  }
+  
+  .item-quantity {
+    margin-bottom: 5px;
+  }
+  
+  .no-orders-message {
+    text-align: center;
+    color: #ff0000;
+  }
+  

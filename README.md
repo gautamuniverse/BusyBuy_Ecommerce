@@ -1,3 +1,147 @@
+# BusyBuy
+
+BusyBuy is a simple e-commerce web application built with React.js, Firebase/Firestore, and other modern libraries. The application includes functionalities for user authentication, product listing, cart management, order history, and more.
+
+## Tech Stack
+
+- **Frontend**: React.js
+- **Backend**: Firebase/Firestore
+- **Routing**: react-router-dom
+- **Notifications**: react-toastify
+- **Loading Spinner**: react-spinner
+
+## Features
+
+1. **User Authentication**: 
+   - Register: Allows new users to register.
+   - Login: Allows existing users to log in.
+   - Google+ Authentication: Provided by Firebase.
+
+2. **Home Page**:
+   - Displays a list of products.
+   - Search functionality to search products by name.
+   - Filter functionality based on product price and categories.
+
+3. **Product Card Component**:
+   - Displays product image, title, price, and buttons to add/remove the product from the cart.
+   - If the product is already in the cart, its quantity can be increased/decreased.
+
+4. **Cart Page**:
+   - Displays the products added to the cart.
+   - Allows users to increase/decrease the quantity of each product or remove products.
+   - Shows the total cost of the products in the cart.
+   - Provides a button to purchase the items in the cart.
+
+5. **Orders Page**:
+   - Displays the products the user has purchased along with the order date.
+
+6. **Notifications**:
+   - Toast messages for asynchronous actions and error conditions using react-toastify.
+
+## Project Structure
+
+```plaintext
+BUSYBUY1
+├── node_modules
+├── public
+├── src
+│   ├── Assets
+│   ├── Components
+│   │   ├── Authentication
+│   │   │   ├── SignIn.jsx
+│   │   │   ├── SignUp.jsx
+│   │   ├── Cart.jsx
+│   │   ├── ErrorPage.jsx
+│   │   ├── Home.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Orders.jsx
+│   │   ├── ProductCard.jsx
+│   ├── Config
+│   │   ├── auth.js
+│   │   ├── firestore.js
+│   ├── Context
+│   │   ├── authContext.jsx
+│   │   ├── productContext.jsx
+│   ├── Styles
+│   │   ├── common.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   ├── productData.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+- A Firebase project set up with Firestore and Authentication enabled.
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+
+```sh
+cd busybuy1
+```
+
+3. Install dependencies:
+
+```sh
+npm install
+```
+
+4. Create a `.env` file in the root directory and add your Firebase configuration:
+
+```env
+REACT_APP_FIREBASE_API_KEY=<your-api-key>
+REACT_APP_FIREBASE_AUTH_DOMAIN=<your-auth-domain>
+REACT_APP_FIREBASE_PROJECT_ID=<your-project-id>
+REACT_APP_FIREBASE_STORAGE_BUCKET=<your-storage-bucket>
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<your-messaging-sender-id>
+REACT_APP_FIREBASE_APP_ID=<your-app-id>
+```
+
+5. Start the development server:
+
+```sh
+npm start
+```
+
+## Usage
+
+- **Register**: Create a new account using the sign-up form.
+- **Login**: Log in using your credentials or Google+.
+- **Browse Products**: View the products on the home page and use the search and filter features.
+- **Manage Cart**: Add products to the cart, adjust quantities, or remove items.
+- **Place Orders**: Purchase the items in your cart and view your order history on the orders page.
+
+## Acknowledgements
+
+- React.js
+- Firebase
+- react-router-dom
+- react-toastify
+- react-spinner
+
+## Contact Information
+
+- **Author**: Gautam
+- **GitHub**: [gautamuniverse](https://github.com/gautamuniverse)
+- **LinkedIn**: [Gautam](https://www.linkedin.com/in/gautam-116307bb/)
+- **Instagram**: [@gautamuniverse.in](https://www.instagram.com/gautamuniverse.in/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
