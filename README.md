@@ -86,13 +86,13 @@ BUSYBUY1
 1. Clone the repository:
 
 ```sh
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/gautamuniverse/BusyBuy_Ecommerce/)
 ```
 
 2. Navigate to the project directory:
 
 ```sh
-cd busybuy1
+cd BusyBuy
 ```
 
 3. Install dependencies:
